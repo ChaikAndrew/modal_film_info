@@ -1,0 +1,109 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-color: rgb(212, 212, 212);
+}
+
+.opModal {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.opModal {
+  margin-left: 43%;
+  margin-top: 25px;
+
+}
+
+.film-card__modal {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  left: 50%;
+  top: -450px;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+ 
+ 
+  
+  border-radius: 6px;
+  transition: all 1.2s;
+  filter: blur(2px);
+}
+
+h3 {
+  color: #FF6B01;
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+
+
+
+button {
+  border: 1px solid black;
+  background: none;
+  font-size: 16px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color:  #FF6B01;
+  color: #fff;
+  padding: 3px 20px;
+}
+
+.active {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0);
+}
+
+.film-info {
+  margin-right: 20px;
+}
+
+.film-card__close {
+  border: 1px solid black;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  
+}
+
+.film-card__desc {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.film-add__btn {
+  display: flex;
+  padding: 0px 20px;
+}
+
+.film-add__watched {
+margin-right: 15px;
+}
+.film-card__about {
+  padding: 15px;
+}
