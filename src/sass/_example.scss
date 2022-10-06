@@ -107,3 +107,28 @@ margin-right: 15px;
 .film-card__about {
   padding: 15px;
 }
+.about-film{
+  margin-bottom: 20px;
+}
+.about-film__left {
+  width: 150px;
+  color: gray;
+}
+
+.vote-average {
+  background-color: #FF6B01;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.votes-count {
+  background-color: #F7F7F7;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.separator {
+  padding: 0px 10px;
+}
