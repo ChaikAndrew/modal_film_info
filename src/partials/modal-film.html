@@ -1,11 +1,6 @@
 <!-- фото для фідкриття модального вікна з інформацією про фільм -->
 <span class="opModal"
-  ><img
-    class="film-info__img"
-    src="./images/rectangle18.png"
-    width="200px"
-    alt="film"
-/></span>
+  >info-film</span>
 
 <!-- модальне вікно з інформаціє про фільм -->
 <div class="film-card__modal">
@@ -15,8 +10,9 @@
   <img
     class="film-card__img"
     src="./images/rectangle18.png"
-    width="200px"
-    alt="film"
+    width="375px"
+    height="468px"
+    alt="film__img"
   />
 
   <div class="film-card__about">
@@ -24,23 +20,23 @@
     <table class="about-film">
       <tbody>
         <tr class ="about-film__info">
-          <td class="about-film__left">Vote / Votes</td>
-          <td class="about-film__right">
+          <td class="about-film__description">Vote / Votes</td>
+          <td class="about-film__characteristics">
             <span class="vote-average">7.3</span><span class="separator">/</span
             ><span class="votes-count">1260</span>
           </td>
         </tr>
         <tr class ="about-film__info">
-          <td class="about-film__left">Popularity</td>
-          <td class="about-film__right">100.2</td>
+          <td class="about-film__description">Popularity</td>
+          <td class="about-film__characteristics">100.2</td>
         </tr>
         <tr class ="about-film__info">
-          <td class="about-film__left">Original Title</td>
-          <td class="about-film__right about-film__title">A fistful of lead</td>
+          <td class="about-film__description">Original Title</td>
+          <td class="about-film__characteristics about-film__title">A fistful of lead</td>
         </tr>
         <tr class ="about-film__info">
-          <td class="about-film__left">Genre</td>
-          <td class="about-film__right">Western </td>
+          <td class="about-film__description">Genre</td>
+          <td class="about-film__characteristics">Western </td>
         </tr>
       </tbody>
     </table>
@@ -57,7 +53,12 @@
     </p>
     <ul class="film-add__btn">
       <li><button class="film-add__watched">add to Watched</button></li>
-      <li><button class="film-add__Queue">add to Queue</button></li>
+      <li><button class="film-add__queue">add to Queue</button></li>
     </ul>
   </div>
 </div>
+
+
+
+
+

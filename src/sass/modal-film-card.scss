@@ -11,29 +11,21 @@ body {
   background-color: rgb(212, 212, 212);
 }
 
-.opModal {
-  font-size: 16px;
-  cursor: pointer;
-}
-
 ul {
   list-style-type: none;
 }
 
 .opModal {
-  margin-left: 43%;
-  margin-top: 25px;
-
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .film-card__modal {
+  z-index: 9999;
   display: flex;
   flex-direction:row;
-  align-items: center;
   justify-content: center;
 
-
- 
   position: absolute;
   left: 50%;
   top: -450px;
@@ -42,8 +34,6 @@ ul {
   padding: 1rem;
   background-color: rgb(255, 255, 255);
  
- 
-  
   border-radius: 6px;
   transition: all 1.2s;
   filter: blur(2px);
@@ -54,8 +44,6 @@ h3 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-
-
 
 button {
   height: 42px;
@@ -87,7 +75,6 @@ button:hover {
   filter: blur(0);
 }
 
-
 .film-info {
   margin-right: 20px;
 }
@@ -108,19 +95,23 @@ button:hover {
 
 .film-add__btn {
   display: flex;
+  justify-content: center;
   padding: 0px 20px;
 }
 
 .film-add__watched {
 margin-right: 15px;
 }
+
 .film-card__about {
   margin-left: 15px;
 }
+
 .about-film{
   margin-bottom: 20px;
 }
-.about-film__left {
+
+.about-film__description {
   width: 150px;
   color: gray;
 }
@@ -158,7 +149,7 @@ margin-right: 15px;
 
 }
 .film-card__title {
-  font-size: 12px;
+  margin-top: 5px;
   text-transform: uppercase;
   font-size: 31px;
 }
