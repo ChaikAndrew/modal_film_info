@@ -16,21 +16,25 @@ ul {
 }
 
 .opModal {
+  z-index: 1000000000;
   font-size: 16px;
   cursor: pointer;
 }
 
 .film-card__modal {
   z-index: 9999;
-  
+  position: absolute;
+
   flex-direction:row;
   justify-content: center;
-
-  position: absolute;
+  overflow-y: auto;
+  overflow-x:hidden;
+  
   left: 50%;
-  top: -450px;
+  top: -50%;
   transform: translate(-50%, -50%);
-  width: 280px;
+  width: 300px;
+  max-height: 95%;
   padding: 1rem;
   background-color: rgb(255, 255, 255);
  
@@ -52,8 +56,6 @@ ul {
     width: 800px;
   }
 }
-
-
 
 
 button {
@@ -79,16 +81,7 @@ button:hover {
   padding: 0 20px;
 }
 
-.active {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(0);
 
-  @media screen and (max-width: 390px) {
-    top: 73%;
-  }
-}
 
 .film-info {
   margin-right: 20px;
@@ -209,3 +202,11 @@ margin-right: 15px;
 .about-film__info:not(:last-child) {
   margin-bottom: 8px;
 }
+
+.active {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0);
+}
+
